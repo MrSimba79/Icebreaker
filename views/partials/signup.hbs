@@ -1,0 +1,62 @@
+<div class="page-wrapper font-mukta">
+        <div class="page-wrapper">
+            <div class="card card-3">
+
+                <div class="card-body">
+                    <h2 class="title">Welcome to Icebreaker!</h2>
+
+                    <div class="registered hidden">
+                        <div class="icon-container">
+                            <i><img src="/assets/icons/check2-circle.svg" id="done-icon"></i>
+                        </div>
+                        <h2>Registration complete!</h2>
+                    </div>
+
+                    <form class="registrationForm validate-form" method="POST">
+                        <div class="wrap-input1 validate-input" data-validate = "Needs more than 3 characters">
+                            <input class="input1" id="nameInput" type="text" name="name" placeholder="Name">
+                        </div>
+
+                        <div class="wrap-input1 validate-input" data-validate = "Gender required">
+                            <select class="input1" id="gender" name="gender" placeholder="Gender" required>
+                                <option value="" selected disabled>Gender</option>
+                                <option value="female">Female</option>
+                                <option value="male">Male</option>
+                            </select>
+                        </div>
+
+                        <div class="wrap-input1 validate-input" data-validate = "Birthdate required">
+                          <input class="input1" id="birthDate" type="date" name="birthdate" placeholder="Birthdate">
+                        </div>
+
+                        <div class="wrap-input1 validate-input" data-validate = "Needs more than 3 characters">
+                            <input class="input1" id="usernameInput" type="text" name="username" placeholder="Username">
+                        </div>
+        
+                        <div class="wrap-input1 validate-input" data-validate = "Invalid format">
+                            <input class="input1" id="emailInput" type="text" name="email" placeholder="Email">
+                        </div>
+        
+                        <div class="wrap-input1 validate-input" data-validate = "Password is required">
+                            <input class="input1" id="passInput" type="password" name="password" placeholder="Password">
+                        </div>
+        
+                        <div class="wrap-input1 validate-input" data-validate = "Password confirm is required">
+                            <input class="input1" id="confirmPassInput" type="password" name="confirmPassword" placeholder="Confirm Password">
+                        </div>
+
+                        <div class="container-registration-form-btn">
+                            <button type="button" class="registration-form-btn" id="submitButton">
+                                <span>
+                                    Sign up
+                                    <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                                </span>
+                            </button>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
