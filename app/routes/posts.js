@@ -12,10 +12,16 @@ router.get('/postTitle/:title', (req, res) => {
 });
 
 router.post('/newPost', (req, res) => {
-    const { caption, type } = req.body;
-    if (caption && type) {
+    // const { title, image_url, description } = req.body;
+
+    const title = req.body.title;
+    const image_url = req.body.image_url;
+    // const description = req.body.description;
+
+
+    if (title && image_url) {
         try {
-            db.promise().query(`INSERT INTO POSTS (caption, type) VALUES('${caption}', '${type}')`);
+            db.promise().query(`INSERT INTO Posts (title, image_url) VALUES ('${title}', '${image_url}')`);
             res.status(201).send({ msg: 'Created post' });
         }
         catch (err) {
